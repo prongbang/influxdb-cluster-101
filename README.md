@@ -89,22 +89,22 @@ http://localhost:8888/
 
 - Login
 
-![Alt text](chronograf-1.png)
+![Alt text](screenshots/chronograf-1.png)
 
 - Dashboard
 
-![Alt text](chronograf-2.png)
+![Alt text](screenshots/chronograf-2.png)
 
 - Kapacitor (Skip)
 
-![Alt text](chronograf-3.png)
+![Alt text](screenshots/chronograf-3.png)
 
 - Connections
 
-![Alt text](chronograf-4.png)
+![Alt text](screenshots/chronograf-4.png)
 
 ## InfluxDb Web Admin
 
 http://localhost:8083/
 
-![Alt text](influxdb-admin-1.png)
+![Alt text](screenshots/influxdb-admin-1.png)
