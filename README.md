@@ -79,6 +79,12 @@ Success
 {"results":[{"statement_id":0}]}
 ```
 
+## Install Telegraf
+
+```shell
+make install_telegraf
+```
+
 ## Chronograf Web Admin
 
 ```shell
