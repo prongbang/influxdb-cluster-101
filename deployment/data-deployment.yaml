@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: influxdb-data-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: influxdb-data
+  template:
+    metadata:
+      labels:
+        app: influxdb-data
+    spec:
+      containers:
+        - name: influxdb-data-01
+          image: chengshiwen/influxdb:1.8.10-c1.1.2-data
+          ports:
+            - containerPort: 8086
+            - containerPort: 8088
+          resources:
+          # Define resource limits and requests here if needed

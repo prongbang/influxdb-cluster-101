@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: influxdb-meta-deployment
+spec:
+  replicas: 1  # Set the desired number of replicas
+  selector:
+    matchLabels:
+      app: influxdb-meta
+  template:
+    metadata:
+      labels:
+        app: influxdb-meta
+    spec:
+      containers:
+        - name: influxdb-meta-01
+          image: chengshiwen/influxdb:1.8.10-c1.1.2-meta
+          ports:
+            - containerPort: 8091
+            - containerPort: 8089
+          resources:
+          # Define resource limits and requests here if needed
+          # Add environment variables if needed
