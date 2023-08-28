@@ -103,3 +103,15 @@ cd /data/yaml/default/InfluxDB/helm-charts/charts/influxdb-cluster/
 
 helm upgrade --install influxdb-cluster  .
 ```
+
+```shell
+helm list --all-namespaces
+```
+
+```shell
+helm uninstall <deployment name> --namespace <namespace_name>
+```
+
+```shell
+helm uninstall influx-proxy --namespace default
+```
