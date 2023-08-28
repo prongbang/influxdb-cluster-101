@@ -6,7 +6,7 @@ services:
     container_name: chronograf
     hostname: chronograf
     ports:
-      - 8888:8888
+      - "8888:8888"
     restart: unless-stopped
     networks:
       - influxdb-cluster

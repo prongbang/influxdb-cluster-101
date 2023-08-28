@@ -6,7 +6,7 @@ services:
     container_name: influxdb-admin
     hostname: influxdb-admin
     ports:
-      - 8083:8083
+      - "8083:8083"
     restart: unless-stopped
     networks:
       - influxdb-cluster
